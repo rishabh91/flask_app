@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <title>English Dictionary</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>A Simple English Dictionary</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('dictionary') }}">
+                  <label for="yourname">Enter your word:</label>
+                  <input type="text" name="word" /><br />
+                  
+                  <input type="submit" />
+                </form>
+            </div>
+            
+        
+    </body>
+</html>
+ 
