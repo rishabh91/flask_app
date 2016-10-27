@@ -35,10 +35,10 @@ def dictionary():
 					value = value['subsenses']
 					value = value[0]
 					value = value['definition']
-					values.append(value)
+					values.append(value[0].encode('ascii', 'ignore'))
 				except:
 					value = value['definition']
-					values.append(value)
+					values.append(value[0].encode('ascii', 'ignore'))
 		else:
 			return render_template('form_nodata.html')
 	else:
